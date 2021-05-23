@@ -15,13 +15,13 @@ $ npm install input-phone-rn-br
 ```
 ## Importando a biblioteca
 ```ts
-const PhoneInputRn from "input-phone-rn-br"
+import PhoneInputRn from "input-phone-rn-br"
 ```
 ## Exemplo de uso
 ```tsx
 import React, {useState} from "react";
 import {SafeAreaView, StyleSheet, Text} from "react-native";
-const PhoneInputRn from "input-phone-rn-br";
+import PhoneInputRn from "input-phone-rn-br";
 
 const App = () => {
   const [value, setValue] = useState<string>('');

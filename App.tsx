@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
-import PhoneInputRn from './src/react-native-phone-input-br/index';
+import PhoneInputRn from 'input-phone-rn-br';
 
 const App = () => {
   const [value, setValue] = useState<string>('');
