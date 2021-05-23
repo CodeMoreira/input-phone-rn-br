@@ -1,6 +1,6 @@
 {
   "name": "input-phone-rn-br",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Input de celular para react native com formação brasileira",
   "main": "index.tsx",
   "scripts": {
