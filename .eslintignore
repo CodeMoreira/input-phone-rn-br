@@ -1,0 +1,7 @@
+assets
+./*.js
+./*.ts
+./*.tsx
+android
+ios
+node_modules
