@@ -102,11 +102,9 @@ const PhoneInputRn: React.FC<Props> = ({
   return (
     <View
       style={
-        containerStyle
-          ? containerStyle
-          : withDarkTheme
-          ? styles.containerDark
-          : styles.container
+        withDarkTheme
+          ? [styles.containerDark, containerStyle]
+          : [styles.container, containerStyle]
       }
     >
       <TouchableOpacity>
@@ -123,11 +121,9 @@ const PhoneInputRn: React.FC<Props> = ({
             visible,
           }}
           containerButtonStyle={
-            containerButtonStyle
-              ? containerButtonStyle
-              : withDarkTheme
-              ? styles.ButtonStyleDark
-              : styles.ButtonStyle
+            withDarkTheme
+              ? [styles.ButtonStyleDark, containerButtonStyle]
+              : [styles.ButtonStyle, containerButtonStyle]
           }
           theme={withDarkTheme ? DARK_THEME : DEFAULT_THEME}
           onClose={() => closeModal()}
