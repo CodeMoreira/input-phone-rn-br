@@ -1,5 +1,11 @@
 import React, {useMemo, useState} from 'react';
-import {View, TextInput, StyleSheet, TouchableOpacity} from 'react-native';
+import {
+  View,
+  ViewStyle,
+  TextInput,
+  StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
 import CountryPicker, {
   DARK_THEME,
   DEFAULT_THEME,
@@ -12,17 +18,17 @@ import {
 
 interface Props {
   value: string;
-  onChangeText: ((text: string) => void) | undefined;
-  containerStyle?: object;
+  onChangeText: (text: string) => void | undefined;
+  containerStyle?: ViewStyle;
   cellFormat?: boolean;
   telephoneFormat?: boolean;
   placeHolder?: string;
   autoFocus?: boolean;
   withDarkTheme?: boolean;
   phoneFullFormat?: string | undefined;
-  setPhoneFormated?: Function | any;
+  setPhoneFormated?: (text: string) => void;
   inputMaxLength?: number | undefined;
-  containerButtonStyle?: object | undefined;
+  containerButtonStyle?: ViewStyle | undefined;
 }
 
 const PhoneInputRn: React.FC<Props> = ({
@@ -154,7 +160,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: 5,
   },
   textInput: {
     fontSize: 20,
@@ -182,7 +187,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: 5,
   },
   textInputDark: {
     fontSize: 20,

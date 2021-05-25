@@ -61,17 +61,17 @@ export default App;
 
 ## Props
 - `value`: boolean
-- `onChangeText`: (): void
+- `onChangeText`: (text: string) => void
 - `autoFocus?`: boolean
 - `placeHolder?`: string
 - `inputMaxLenth?`: number
 - `cellFormat?`: boolean
 - `telephoneFormat?`: boolean
 - `phoneFullFormat?`: string
-- `setPhoneFormated?`: Function (ultilize essa função em um state para armazenar o numero de telefone junto com o código do pais)
+- `setPhoneFormated?`: (text: string) => void
 - `withDarkTheme?`: boolean
-- `containerStyle?`: object
-- `containerButtonStyle?`: object
+- `containerStyle?`: `StyleProp<ViewStyle>`
+- `containerButtonStyle?`: `StyleProp<ViewStyle>`
  
 <br>
 
