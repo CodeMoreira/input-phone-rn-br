@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="./src/assets/exemplo1.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
+  <img src="./assets/exemplo1.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
 
-  <img src="./src/assets/exemplo2.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
+  <img src="./assets/exemplo2.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
 </div>
 <br>
-<h1 align="center">Input Phone React Native
+<h1 align="center">Phone Input React Native
 </h1>
 
 # Como usar?
@@ -61,17 +61,17 @@ export default App;
 
 ## Props
 - `value`: boolean
-- `onChangeText`: (): void
+- `onChangeText`: (text: string) => void
 - `autoFocus?`: boolean
 - `placeHolder?`: string
 - `inputMaxLenth?`: number
 - `cellFormat?`: boolean
 - `telephoneFormat?`: boolean
 - `phoneFullFormat?`: string
-- `setPhoneFormated?`: Function (ultilize essa função em um state para armazenar o numero de telefone junto com o código do pais)
+- `setPhoneFormated?`: (text: string) => void
 - `withDarkTheme?`: boolean
-- `containerStyle?`: object
-- `containerButtonStyle?`: object
+- `containerStyle?`: `StyleProp<ViewStyle>`
+- `containerButtonStyle?`: `StyleProp<ViewStyle>`
  
 <br>
 
