@@ -13,6 +13,10 @@
 ```shell
 $ npm install input-phone-rn-br
 ```
+ou
+```shell
+$ yarn add input-phone-rn-br
+```
 ## Importando a biblioteca
 ```ts
 import PhoneInputRn from "input-phone-rn-br"
