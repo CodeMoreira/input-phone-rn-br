@@ -10,9 +10,17 @@
 # Como usar?
 
 ## instalação
+Utilize npm:
 ```shell
 $ npm install input-phone-rn-br
 ```
+ou yarn:
+```shell
+$ yarn add input-phone-rn-br
+```
+
+<br>
+
 ## Importando a biblioteca
 ```ts
 import PhoneInputRn from "input-phone-rn-br"
@@ -72,6 +80,7 @@ export default App;
 - `withDarkTheme?`: boolean
 - `containerStyle?`: `StyleProp<ViewStyle>`
 - `containerButtonStyle?`: `StyleProp<ViewStyle>`
+- `selfRef`?: `React.LegacyRef<TextInput>`
  
 <br>
 

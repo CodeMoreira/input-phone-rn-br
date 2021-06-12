@@ -29,6 +29,7 @@ interface Props {
   setPhoneFormated?: (text: string) => void;
   inputMaxLength?: number | undefined;
   containerButtonStyle?: ViewStyle | undefined;
+  selfRef?: React.LegacyRef<TextInput>;
 }
 
 const PhoneInputRn: React.FC<Props> = ({
@@ -43,6 +44,8 @@ const PhoneInputRn: React.FC<Props> = ({
   setPhoneFormated,
   inputMaxLength,
   containerButtonStyle,
+  selfRef,
+  ...props
 }) => {
   const [countryCode, setCountryCode] = useState<CountryCode>('BR');
   const [withCountryNameButton] = useState<boolean>(false);
@@ -53,6 +56,7 @@ const PhoneInputRn: React.FC<Props> = ({
   const [withCallingCodeButton] = useState<boolean>(true);
   const [visible, setVisible] = useState<boolean>(false);
   const [defaultMaxLength, setDefaultMaxLength] = useState<number>(11);
+
   const onSelect = (country: Country) => {
     setCountryCode(country.cca2);
   };
@@ -79,7 +83,7 @@ const PhoneInputRn: React.FC<Props> = ({
 
   const PhoneFullFormat = async (phone: string) => {
     const code = await getCallingCode(countryCode);
-    return setPhoneFormated(`+${code} ${phone}`);
+    return setPhoneFormated && setPhoneFormated(`+${code} ${phone}`);
   };
   PhoneFullFormat(value);
 
@@ -145,7 +149,9 @@ const PhoneInputRn: React.FC<Props> = ({
         placeholder={placeHolder ? placeHolder : 'Insert phone'}
         keyboardType="number-pad"
         autoFocus={autoFocus}
+        ref={selfRef}
         maxLength={inputMaxLength ? inputMaxLength : defaultMaxLength}
+        {...props}
       />
     </View>
   );
