@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="./src/assets/exemplo1.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
+  <img src="./assets/exemplo1.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
 
-  <img src="./src/assets/exemplo2.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
+  <img src="./assets/exemplo2.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
 </div>
 <br>
 <h1 align="center">Phone Input React Native
@@ -10,13 +10,17 @@
 # Como usar?
 
 ## instalação
+Utilize npm:
 ```shell
 $ npm install input-phone-rn-br
 ```
-ou
+ou yarn:
 ```shell
 $ yarn add input-phone-rn-br
 ```
+
+<br>
+
 ## Importando a biblioteca
 ```ts
 import PhoneInputRn from "input-phone-rn-br"
@@ -76,6 +80,7 @@ export default App;
 - `withDarkTheme?`: boolean
 - `containerStyle?`: `StyleProp<ViewStyle>`
 - `containerButtonStyle?`: `StyleProp<ViewStyle>`
+- `selfRef`?: `React.LegacyRef<TextInput>`
  
 <br>
 
