@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="./assets/exemplo1.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
+  <img src="./src/assets/exemplo1.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
 
-  <img src="./assets/exemplo2.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
+  <img src="./src/assets/exemplo2.png" height="400" title="Anurag Garg"   alt="Anurag Garg" style="box-shadow: 0 20px 30px 3px rgba(9, 9, 16, 0.2);">
 </div>
 <br>
 <h1 align="center">Phone Input React Native
