@@ -91,7 +91,7 @@ export default App;
 | inputMaxLenth | `number` | Determina um numero maximo de caracteres no input. | ❌ |
 | cellFormat | `boolean` | Define se a mascara interna sera no formato de celular. | ❌ |
 | telephoneFormat | `boolean` | Define se a mascara interna sera no formato de telefone. | ❌ |
-| phoneFullFormat | `string` | Retorna o numero completo, ex: (11) 22 34444-4444 | ❌ |
+<!-- | phoneFullFormat | `string` | Retorna o numero completo, ex: (11) 22 34444-4444 | ❌ | -->
 | setPhoneFormated | `(text: string) => void` | Chama a função que atualiza o telefone completo. | ❌ |
 | withDarkTheme | `boolean` | Troca o tema do input. | ❌ |
 | containerStyle | `StyleProp<ViewStyle>` | Define um estilo próprio para o container do input. | ❌ |
