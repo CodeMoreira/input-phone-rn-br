@@ -68,7 +68,7 @@ export default App;
 <br>
 
 ## Props
-- `value`: boolean
+<!-- - `value`: boolean
 - `onChangeText`: (text: string) => void
 - `autoFocus?`: boolean
 - `placeHolder?`: string
@@ -81,7 +81,22 @@ export default App;
 - `containerStyle?`: `StyleProp<ViewStyle>`
 - `containerButtonStyle?`: `StyleProp<ViewStyle>`
 - `selfRef`?: `React.LegacyRef<TextInput>`
- 
+ -->
+ | Prop  | Tipagem | Descrição | Obrigatório
+| :------------ |:---------------| :---------------| :---------------|
+| value | `boolean` | Defini o valor do input | ✔ |
+| onChangeText | `(text: string) => void` | Quando o texto sofre qualquer alteração ele chama essa função. | ✔ |
+| autoFocus | `string` | Determina se ele irá começar focado. | ❌ |
+| placeHolder | `string` | Texto ilustrativo dentro do input. | ❌ |
+| inputMaxLenth | `number` | Determina um numero maximo de caracteres no input. | ❌ |
+| cellFormat | `boolean` | Define se a mascara interna sera no formato de celular. | ❌ |
+| telephoneFormat | `boolean` | Define se a mascara interna sera no formato de telefone. | ❌ |
+| phoneFullFormat | `string` | Retorna o numero completo, ex: (11) 22 34444-4444 | ❌ |
+| setPhoneFormated | `(text: string) => void` | Chama a função que atualiza o telefone completo. | ❌ |
+| withDarkTheme | `boolean` | Troca o tema do input. | ❌ |
+| containerStyle | `StyleProp<ViewStyle>` | Define um estilo próprio para o container do input. | ❌ |
+| containerButtonStyle | `StyleProp<ViewStyle>` | Define um estilo próprio para o select do input (estilo externo). | ❌ |
+| selfRef | `React.LegacyRef<TextInput>` | Use um useRef para interagir diretamente com o input. | ❌ |
 <br>
 
 ## Agradecimentos
